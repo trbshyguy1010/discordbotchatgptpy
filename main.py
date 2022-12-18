@@ -27,7 +27,7 @@ token = "your discord token here"
 async def ask(interactionlol: discord.Interaction, aske: str):
     await interactionlol.response.defer()
     response = generateResponse(aske)
-    await asyncio.sleep(20)
+    # await asyncio.sleep(20)
     await interactionlol.followup.send(response)
 @tree.command(name="sync", description="sync me uwu...")
 async def syncd(interactionlol: discord.Interaction):
